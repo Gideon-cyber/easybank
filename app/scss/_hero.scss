@@ -40,10 +40,10 @@
 
       @include breakpoints-up(large) {
         height: 120%;
-        background-size: 93%;
+        background-size: 89%;
         background-position: center bottom;
-        top: 7%;
-        left: 20%;
+        top: 4%;
+        left: 21%;
       }
     }
 
@@ -59,7 +59,7 @@
       @include breakpoints-up(large) {
         background: url("/images/bg-intro-desktop.svg");
 
-        height: 106%;
+        top: 6%;
         background-size: 134%;
         background-position: 0% 85%;
       }
@@ -67,6 +67,7 @@
   }
 
   &__text {
+    padding-bottom: 5.5rem;
     text-align: center;
 
     @include breakpoints-up(large) {
@@ -74,6 +75,8 @@
       order: 1;
       padding-right: 0;
       text-align: left;
+      padding-bottom: 0;
+      padding-top: 5.5rem;
     }
 
     h1 {
@@ -86,21 +89,6 @@
       @include breakpoints-up(large) {
         font-size: $font-xl;
       }
-    }
-
-    p {
-      font-size: $font-sm;
-      line-height: 1.5rem;
-      font-weight: bold;
-      margin-bottom: 2.25rem;
-
-      @include breakpoints-up(large) {
-        font-size: 1rem;
-      }
-    }
-
-    a {
-      margin-bottom: 5.5rem;
     }
   }
 }

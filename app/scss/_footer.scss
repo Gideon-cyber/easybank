@@ -1,0 +1,51 @@
+.footer {
+  background-color: $darkBlue;
+  color: $white;
+  padding-top: 2.5rem;
+  padding-bottom: 2.8125rem;
+  text-align: center;
+
+  a {
+    color: $white;
+    font-size: $font-sm;
+    font-weight: 700;
+  }
+
+  &__logo {
+    margin-bottom: 1.875rem;
+    display: inline-block;
+  }
+
+  &__social {
+    margin-bottom: 2.375rem;
+
+    a {
+      display: inline-block;
+
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2.125rem;
+
+    &.col2 {
+      margin-bottom: 2.25rem;
+    }
+  }
+
+  &__cta {
+    margin-bottom: 1.875rem;
+  }
+
+  &__copyright {
+    font-size: $font-sm;
+    color: $grayishBlue;
+    font-weight: 700;
+  }
+}
