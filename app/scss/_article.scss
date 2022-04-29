@@ -10,7 +10,7 @@
 
   h2 {
     color: $darkBlue;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 1.75rem;
     margin-bottom: 2.375rem;
     text-align: center;
@@ -79,12 +79,12 @@
   &__author {
     font-size: 0.5625rem;
     margin-bottom: 1rem;
-    font-weight: 700;
+    font-weight: 400;
   }
 
   &__title {
     font-size: 1rem;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 1.25rem;
     margin-bottom: 0.8125rem;
 
@@ -100,7 +100,7 @@
 
   &__description {
     font-size: 0.75rem;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 1.125rem;
   }
 }

@@ -12,7 +12,7 @@
 
   h2 {
     color: $darkBlue;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 1.75rem;
 
     @include breakpoints-down(medium) {
@@ -75,7 +75,7 @@
   }
 
   &__title {
-    font-weight: 700;
+    font-weight: 400;
     color: $darkBlue;
     margin-bottom: 1.625rem;
     font-size: 1rem;
@@ -89,7 +89,7 @@
   &__description {
     font-size: $font-sm;
     line-height: 1.5rem;
-    font-weight: 700;
+    font-weight: 400;
 
     @include breakpoints-up(medium) {
       font-size: 0.9375rem;
