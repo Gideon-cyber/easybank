@@ -93,6 +93,7 @@
 
       &:hover {
         color: $limeGreen;
+        text-shadow: 0.5px 0.5px $brightCyan, -0.5px -0.5px $brightCyan;
       }
     }
   }
