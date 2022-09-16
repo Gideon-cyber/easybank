@@ -19,6 +19,9 @@
     />
     <link rel="stylesheet" href="/dist/style.css" />
 
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <title>Frontend Mentor | Easybank landing page</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -26,6 +29,7 @@
       .attribution {
         font-size: 11px;
         text-align: center;
+        background-color: hsl(233, 26%, 24%);
       }
       .attribution a {
         color: hsl(228, 45%, 44%);
@@ -34,7 +38,7 @@
   </head>
   <body>
     <header class="header">
-      <nav class="flex flex-jc-sb flex-ai-c padding-lr">
+      <nav class="flex flex-jc-sb flex-ai-c padding-lr" data-aos="fade-down">
         <a href="#" class="header__logo">
           <img src="images/logo.svg" alt="Easybank logo" />
         </a>
@@ -59,27 +63,27 @@
     </header>
 
     <section class="hero">
-      <div class="hero__img enlarge"></div>
-      <div class="hero__text padding-lr">
-        <h1 class="slide-right">Next generation digital banking</h1>
-        <p class="slide-right">
+      <div class="hero__img" data-aos="fade-up"></div>
+      <div class="hero__text padding-lr" data-aos="fade-up">
+        <h1>Next generation digital banking</h1>
+        <p>
           Take your financial life online. Your Easybank account will be a
           one-stop-shop for spending, saving, budgeting, investing, and much
           more.
         </p>
-        <a href="" class="button slide-right">Request Invite</a>
+        <a href="" class="button">Request Invite</a>
       </div>
     </section>
 
     <section class="feature padding-lr">
-      <h2>Why choose Easybank?</h2>
-      <p>
+      <h2 data-aos="fade-down">Why choose Easybank?</h2>
+      <p data-aos="fade-down">
         We leverage Open Banking to turn your bank account into your financial
         hub. Control your finances like never before.
       </p>
 
       <div class="feature__grid">
-        <div class="feature__item">
+        <div class="feature__item" data-aos="fade-up">
           <div class="feature__icon">
             <img src="images/icon-online.svg" alt="banking icon" />
           </div>
@@ -90,7 +94,7 @@
           </div>
         </div>
 
-        <div class="feature__item">
+        <div class="feature__item" data-aos="fade-down" data-aos-delay="100">
           <div class="feature__icon">
             <img src="images/icon-budgeting.svg" alt="budgeting icon" />
           </div>
@@ -101,7 +105,7 @@
           </div>
         </div>
 
-        <div class="feature__item">
+        <div class="feature__item" data-aos="fade-up" data-aos-delay="200">
           <div class="feature__icon">
             <img src="images/icon-onboarding.svg" alt="Onboarding icon" />
           </div>
@@ -112,7 +116,7 @@
           </div>
         </div>
 
-        <div class="feature__item">
+        <div class="feature__item" data-aos="fade-down" data-aos-delay="300">
           <div class="feature__icon">
             <img src="images/icon-api.svg" alt="banking icon" />
           </div>
@@ -126,10 +130,10 @@
     </section>
 
     <section class="article padding-lr">
-      <h2>Latest Articles</h2>
+      <h2 data-aos="fade-up">Latest Articles</h2>
 
       <div class="article__grid">
-        <div class="article__item">
+        <div class="article__item" data-aos="fade-down">
           <div class="article__image article__image_currency"></div>
           <div class="article__text">
             <div class="article__author">By Claire Robinson</div>
@@ -143,7 +147,7 @@
           </div>
         </div>
 
-        <div class="article__item">
+        <div class="article__item" data-aos="fade-up" data-aos-delay="100">
           <div class="article__image article__image_restaurant"></div>
           <div class="article__text">
             <div class="article__author">By Wilson Hutton</div>
@@ -157,7 +161,7 @@
           </div>
         </div>
 
-        <div class="article__item">
+        <div class="article__item" data-aos="fade-down" data-aos-delay="200">
           <div class="article__image article__image_plane"></div>
           <div class="article__text">
             <div class="article__author">By Wilson Hutton</div>
@@ -171,7 +175,7 @@
           </div>
         </div>
 
-        <div class="article__item">
+        <div class="article__item" data-aos="fade-up" data-aos-delay="300">
           <div class="article__image article__image_confetti"></div>
           <div class="article__text">
             <div class="article__author">By Claire Robinson</div>
@@ -189,7 +193,7 @@
     </section>
 
     <footer class="footer padding-lr">
-      <a href="#" class="footer__logo">
+      <a href="#" class="footer__logo" data-aos="fade-up">
         <img src="images/logo-dark.svg" alt="Easybank logo" />
       </a>
 
@@ -245,36 +249,40 @@
         </a>
       </div>
 
-      <div class="footer__links col1">
+      <div class="footer__links col1" data-aos="zoom-in" data-aos-delay="150">
         <a href="#">About Us</a>
         <a href="#">Contact</a>
         <a href="#">Blog</a>
       </div>
 
-      <div class="footer__links col2">
+      <div class="footer__links col2" data-aos="zoom-in" data-aos-delay="150">
         <a href="#">Careers</a>
         <a href="#">Support</a>
         <a href="#">Privacy Policy</a>
       </div>
 
-      <div class="footer__cta">
+      <div class="footer__cta" data-aos="fade-down" data-aos-delay="300">
         <a href="#" class="button">Request Invite</a>
         <div class="footer__copyright">© Easybank. All Rights Reserved</div>
       </div>
     </footer>
 
-    <!--    
-        
-        
-               
-      
-
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div> -->
+      >. Coded by
+      <a href="https://gidcyberportfolio.netlify.app" target="_blank"
+        >Gideon Nwokpor</a
+      >.
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1200,
+      });
+    </script>
 
     <script src="/app/js/script.js"></script>
   </body>
